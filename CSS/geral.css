@@ -1,0 +1,695 @@
+  *{
+    padding: 0;
+    margin: 0;
+    font-family: Montserrat Regular; 
+    box-sizing: border-box;
+  }
+
+  .col-5 {width: 5%;}
+  .col-10 {width: 10%;}
+  .col-15 {width: 15%;}
+  .col-20 {width: 20%;}
+  .col-25 {width: 25%;}
+  .col-30 {width: 30%;}
+  .col-35 {width: 35%;}
+  .col-40 {width: 40%;}
+  .col-45 {width: 45%;}
+  .col-50 {width: 50%;}
+  .col-55 {width: 55%;}
+  .col-60 {width: 60%;}
+  .col-65 {width: 65%;}
+  .col-70 {width: 70%;}
+  .col-75 {width: 75%;}
+  .col-80 {width: 80%;}
+  .col-85 {width: 85%;}
+  .col-90 {width: 90%;}
+  .col-95 {width: 95%;}
+  .col-100 {width: 100%;}
+  .row {width: 100%; display: flex;}
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px; 
+  }
+
+  .card{
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 10px;
+    height: 100%;
+    border-radius: 10px;
+    
+  }
+
+  .conteudo {
+    float: left;
+    position: fixed;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 60px;
+    width: 100%;
+    height: -webkit-fill-available;
+    z-index: 0;
+    background-color: #e6e2dc;
+    overflow-y: scroll;
+    margin-bottom: 150px;
+  }
+
+  .titulos_pagina{
+    margin: 0 0 0 0;
+    text-align: center; 
+    /* text-shadow: 0.5px 0.5px 0.5px black; */
+    font-size: 25px;
+    color: rgb(100,101,103);
+    font-weight: bold;
+  }
+
+  .titulos_formulario{
+    color: #0060ff;
+    font-weight: bold;
+    margin-left: 20px;
+  }
+
+  .titulos_card{
+    text-align: left; 
+    color: black;
+    font-size: 12px;
+  }
+
+  .labels_card{
+    margin: 20px 0 20px 0;
+    width: 100%;
+    text-align: center; 
+    color: black;
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .labels_pagina{
+    margin: 0 0 0 0;
+    text-align: center; 
+    text-shadow: 0.5px 0.5px 0.5px black;
+    font-size: 25px;
+  }
+
+  .labels_modal{
+    margin: 0 0 0 0;
+    text-align: center; 
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  h1{
+    margin: 0 0 0 0;
+    text-align: left; 
+    font-size: 18px;
+    font-weight: normal;
+  }
+
+  h2{
+    margin: 0 0 0 0;
+    text-align: left; 
+    font-size: 12px;
+    font-weight: normal;
+  }
+
+  h3{
+    margin: 0 0 0 0;
+    text-align: left; 
+    font-size: 10px;
+    font-weight: normal;
+  }
+
+  h4{
+    margin: 0 0 0 0;
+    text-align: left; 
+    text-shadow: 0.5px 0.5px 0.5px gray;
+    font-size: 8px;
+    font-weight: normal;
+  }
+
+  input{
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  input:not([type=radio]){
+    border-color: #9d968d;
+    border-width: 1px;
+    border-style: solid;
+    width: 100%;
+  }
+
+  select{
+    border-radius: 5px;
+    padding: 10px;
+    border-color: #9d968d;
+    border-width: 1px;
+    border-style: solid;
+    width: 100%;
+  }
+
+  textarea{
+    border-radius: 5px;
+    padding: 10px;
+    border-color: #9d968d;
+    border-width: 1px;
+    border-style: solid;
+    width: 100%;
+  }
+
+  button {
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    width: 100%;
+  }
+
+  /* input[type=radio] {
+    width: 10%;
+  } */
+
+  input[readonly] {
+    background-color: #f5f3f1;
+  }
+
+
+  .input_filtro{
+    width: 100%;
+    padding: 5px;
+  }
+
+  /* .select_table{
+    border: none;
+    padding: 5px;
+  } */
+
+  .notification {
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+  
+  .notification:hover {
+    background: red;
+  }
+  
+  .notification .badge {
+    position: absolute;
+    top: 3px;
+    left: 90px;
+    padding: 5px 10px;
+    border-radius: 20%;
+    background-color: red;
+    color: white;
+    display: none;
+  }
+
+  .img_tabela{
+    width: 50px;
+  }
+
+
+  hr{
+    color: gray;
+  }
+
+  .required:after {
+    content: " *";
+    color: red;
+  }
+
+  .cursor_pointer_effect:hover{
+    cursor: pointer;
+    background-color: rgb(105, 162, 255) !important;
+    color: white;
+  }
+
+  .button-card{
+    color:rgb(0, 96, 255);
+  }
+
+  .button-card:hover{
+    cursor: pointer;
+    background-color: rgb(0, 96, 255) !important;
+    color: white;
+  }
+
+  .button-card i {
+    margin: 50px;
+    font-size: 50px;
+  }
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  h1{
+    margin: 0 0 0 0;
+    text-align: left; 
+    font-size: 18px;
+    font-weight: normal;
+  }
+
+  h2{
+    margin: 0 0 0 0;
+    text-align: left; 
+    font-size: 12px;
+    font-weight: normal;
+  }
+
+  h3{
+    margin: 0 0 0 0;
+    text-align: left; 
+    font-size: 10px;
+    font-weight: normal;
+  }
+
+  h4{
+    margin: 0 0 0 0;
+    text-align: left; 
+    text-shadow: 0.5px 0.5px 0.5px gray;
+    font-size: 8px;
+    font-weight: normal;
+  }
+
+  label{
+    font-size: 11px;
+    font-weight: normal;
+  }
+
+  button {
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  h1{
+    margin: 0 0 0 0;
+    text-align: left; 
+    font-size: 18px;
+    font-weight: normal;
+  }
+
+  h2{
+    margin: 0 0 0 0;
+    text-align: left; 
+    font-size: 12px;
+    font-weight: normal;
+  }
+
+  h3{
+    margin: 0 0 0 0;
+    text-align: left; 
+    font-size: 10px;
+    font-weight: normal;
+  }
+
+  h4{
+    margin: 0 0 0 0;
+    text-align: left; 
+    text-shadow: 0.5px 0.5px 0.5px gray;
+    font-size: 8px;
+    font-weight: normal;
+  }
+
+  label{
+    font-size: 11px;
+    font-weight: normal;
+  }
+
+  button {
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+  }
+
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  h1{
+    margin: 0 0 0 0;
+    text-align: left; 
+    font-size: 18px;
+    font-weight: normal;
+  }
+
+  h2{
+    margin: 0 0 0 0;
+    text-align: left; 
+    font-size: 12px;
+    font-weight: normal;
+  }
+
+  h3{
+    margin: 0 0 0 0;
+    text-align: left; 
+    font-size: 10px;
+    font-weight: normal;
+  }
+
+  h4{
+    margin: 0 0 0 0;
+    text-align: left; 
+    text-shadow: 0.5px 0.5px 0.5px gray;
+    font-size: 8px;
+    font-weight: normal;
+  }
+
+  label{
+    font-size: 11px;
+    font-weight: normal;
+  }
+
+  button {
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+  }
+  
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1279px) {
+
+  .titulo_pagina{
+    margin-left:20vw;
+  }
+
+  h1{
+    margin: 0 0 0 0;
+    text-align: left; 
+    font-size: 16px;
+    font-weight: normal;
+  }
+
+  h2{
+    margin: 0 0 0 0;
+    text-align: left; 
+    font-size: 12px;
+    font-weight: normal;
+  }
+
+  h3{
+    margin: 0 0 0 0;
+    text-align: left; 
+    font-size: 10px;
+    font-weight: normal;
+  }
+
+  h4{
+    margin: 0 0 0 0;
+    text-align: left; 
+    text-shadow: 0.5px 0.5px 0.5px gray;
+    font-size: 8px;
+    font-weight: normal;
+  }
+
+  label{
+    font-size: 11px;
+    font-weight: normal;
+  }
+
+  button {
+    padding: 5px;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  input{
+    padding: 5px;
+  }
+
+  select{
+    padding: 5px;
+  }
+
+  textarea{
+    padding: 5px;
+  }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1281px) {
+
+  .titulo_pagina{
+    margin-left:30vw;
+  }
+
+  h1{
+    margin: 0 0 0 0;
+    text-align: left; 
+    font-size: 16px;
+    font-weight: normal;
+  }
+
+  h2{
+    margin: 0 0 0 0;
+    text-align: left; 
+    font-size: 12px;
+    font-weight: normal;
+  }
+
+  h3{
+    margin: 0 0 0 0;
+    text-align: left; 
+    font-size: 10px;
+    font-weight: normal;
+  }
+
+  h4{
+    margin: 0 0 0 0;
+    text-align: left; 
+    text-shadow: 0.5px 0.5px 0.5px gray;
+    font-size: 8px;
+    font-weight: normal;
+  }
+
+  label{
+    font-size: 11px;
+    font-weight: normal;
+  }
+
+  input{
+    padding: 5px;
+  }
+
+  select{
+    padding: 5px;
+  }
+
+  textarea{
+    padding: 5px;
+  }
+
+  button {
+    padding: 5px;
+    text-align: center;
+    font-size: 16px;
+  }
+
+}
+   
+  
+@media only screen and (min-width: 1370px) {
+
+  .titulo_pagina{
+    margin-left:40vw;
+  }
+
+  h1{
+    margin: 0 0 0 0;
+    text-align: left; 
+    font-size: 18px;
+    font-weight: normal;
+  }
+
+  h2{
+    margin: 0 0 0 0;
+    text-align: left; 
+    font-size: 15px;
+    font-weight: normal;
+  }
+
+  h3{
+    margin: 0 0 0 0;
+    text-align: left; 
+    font-size: 10px;
+    font-weight: normal;
+  }
+
+  h4{
+    margin: 0 0 0 0;
+    text-align: left; 
+    text-shadow: 0.5px 0.5px 0.5px gray;
+    font-size: 8px;
+    font-weight: normal;
+  }
+
+  label{
+    font-size: 14px;
+    font-weight: normal;
+  }
+
+  input{
+    padding: 10px;
+  }
+
+  select{
+    padding: 10px;
+  }
+
+  textarea{
+    padding: 10px;
+  }
+
+  button {
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  
+    
+}
+
+/* Lanscape Tablets */
+@media only screen and (width: 1280px) {
+  .titulo_pagina{
+    margin-left:30vw;
+  }
+
+  h1{
+    margin: 0 0 0 0;
+    text-align: left; 
+    font-size: 16px;
+    font-weight: normal;
+  }
+
+  h2{
+    margin: 0 0 0 0;
+    text-align: left; 
+    font-size: 12px;
+    font-weight: normal;
+  }
+
+  h3{
+    margin: 0 0 0 0;
+    text-align: left; 
+    font-size: 10px;
+    font-weight: normal;
+  }
+
+  h4{
+    margin: 0 0 0 0;
+    text-align: left; 
+    text-shadow: 0.5px 0.5px 0.5px gray;
+    font-size: 8px;
+    font-weight: normal;
+  }
+
+  label{
+    font-size: 11px;
+    font-weight: normal;
+  }
+
+  input{
+    padding: 5px;
+  }
+
+  select{
+    padding: 5px;
+  }
+
+  textarea{
+    padding: 5px;
+  }
+
+  button {
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+  }
+}
+
+/* Portrait Tablets */
+@media only screen and (orientation: portrait) and (width:800px) {
+
+  .col-5 {width: 5%;}
+  .col-10 {width: 10%;}
+  .col-15 {width: 15%;}
+  .col-20 {width: 33%;} /* <<<<<<<<<< */
+  .col-25 {width: 25%;}
+  .col-30 {width: 30%;}
+  .col-35 {width: 35%;}
+  .col-40 {width: 40%;}
+  .col-45 {width: 45%;}
+  .col-50 {width: 50%;}
+  .col-55 {width: 55%;}
+  .col-60 {width: 60%;}
+  .col-65 {width: 65%;}
+  .col-70 {width: 70%;}
+  .col-75 {width: 75%;}
+  .col-80 {width: 80%;}
+  .col-85 {width: 85%;}
+  .col-90 {width: 90%;}
+  .col-95 {width: 95%;}
+  .col-100 {width: 100%;}
+  .row {width: 100%; display: flex;}
+
+  .card_row {width: 100%; display: block;} /* <<<<<<<<<< */
+
+  .col-hidden{display: none;}
+
+
+  h1{
+    margin: 0 0 0 0;
+    text-align: left; 
+    font-size: 18px;
+    font-weight: normal;
+  }
+
+  h2{
+    margin: 0 0 0 0;
+    text-align: left; 
+    font-size: 12px;
+    font-weight: normal;
+  }
+
+  h3{
+    margin: 0 0 0 0;
+    text-align: left; 
+    font-size: 10px;
+    font-weight: normal;
+  }
+
+  h4{
+    margin: 0 0 0 0;
+    text-align: left; 
+    text-shadow: 0.5px 0.5px 0.5px gray;
+    font-size: 8px;
+    font-weight: normal;
+  }
+
+  label{
+    font-size: 11px;
+    font-weight: normal;
+  }
+
+  button {
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+  }
+
+}

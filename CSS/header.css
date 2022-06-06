@@ -1,0 +1,160 @@
+  .cabecalho{
+    height: 50px;
+    width: 100%;
+    background-color: #0060ff;
+    color: white;
+  }
+
+  .cabecalho a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .logo_projeto{
+    font-size: 30px;
+    margin-left: 20px;
+    margin-top: 5px;
+  }
+
+  .topnav{
+    height: 50px;
+    width: 100%;
+    background-color: #f5f3f1;
+    color: white;
+  }
+
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    font-size: 12px;
+    height: inherit;
+  }
+
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #e6e2dc;
+  }
+
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #bfb8af;
+  }
+
+  .topnav_icon{
+    font-size: 20px;
+    float: left;
+  }
+
+  .topnav_text{
+    float: left;
+    font-size: 12px;
+  }
+
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+    height: inherit;
+  }
+
+  .dropdown.active {
+    background-color: #bfb8af;
+  }
+
+  .dropdown:hover {
+    background-color: #ddd;
+  }
+
+   /* Dropdown button */
+   .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+    height: inherit;
+  }
+
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    /* min-width: 160px; */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .icon-bar {
+    width: 60px; /* Set a specific width */
+    float: right;
+    background-color: #0060ff; 
+    height: inherit;
+  }
+    
+  .icon-bar a.active {
+    background-color:  #bfb8af;
+  }
+
+  #botao_sair{
+    transition-duration: 0.4s;
+    height: inherit;
+  }
+
+  #botao_sair:hover{
+    background-color: red;
+  }
+
+  @media only screen and (min-width: 992px) {
+
+    .hello_user{
+      float:right !important; 
+      margin-right:15px;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    .hello_user{
+      float:right !important; 
+      margin-right:15px;
+    }
+  }
+
+  @media only screen and (min-width: 1370px) {
+
+    .hello_user{
+      float:right !important; 
+      margin-right:15px;
+    }
+  }

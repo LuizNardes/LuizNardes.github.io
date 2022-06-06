@@ -1,0 +1,772 @@
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+  }
+  
+  .modal-header{
+    height: 90px;
+    width: 50%;
+    background-color: #0060ff;
+    color: white;
+    padding: 10px;
+    margin: 10% auto 0%;/* 10% from the top and centered */
+  }
+
+  .modal-content {
+    background-color: white;
+    padding: 40px;
+    border: 1px solid #888;
+  }
+
+  .modal-content  [class*="col-"] {
+    float: left;
+    padding: 3px; 
+  }
+  
+  .modal-content  input, .modal-content  select, .modal-content  textarea{
+    width: 100%; 
+    background-color: white;
+  }
+  
+  
+  .modal-content  input[readonly] {
+    background-color: #f5f3f1;
+  }
+
+  .gif_loading{
+    margin: 50px auto;
+    text-align: center;
+  }
+
+  .img_korber_modal{
+    width: 50%;
+    float: left;
+  }
+
+  .img_korber_modal_large{
+    width: 30%;
+    float: left;
+  }
+
+  /* Make circles that indicate the steps of the form: */
+  .modal_step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+
+  /* Mark the active step: */
+  .modal_step.active {
+    opacity: 1;
+  }
+
+  /* Mark the steps that are finished and valid: */
+  .modal_step.finish {
+    background-color: #04AA6D;
+  }
+
+  .modal h1{
+    margin: 0 0 0 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+    color: rgb(0,96,255);
+  }
+
+  .modal h2{
+    margin: 0 0 0 0;
+    text-align: left;
+    font-size: 15px;
+    font-weight: bold;
+    width: 100%;
+  }
+
+  .modal h3{
+    margin: 0 0 0 0;
+    text-align: left;
+    font-size: 15px;
+    font-weight: normal;
+    width: 100%;
+  }
+
+  .modal thead{
+    background-color:  #ccc;
+    color:black;
+  }
+
+  .modal .imagem_lista{
+    font-size: 24px;
+  }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .modal-header{
+    height: 90px;
+    width: 100%;
+    background-color: #0060ff;
+    color: white;
+    padding: 10px;
+    margin: 0px auto 0%; /* from the top and centered */
+  }
+  .modal-content {
+    background-color: #fefefe;
+    margin: 0% auto; /* 0% from the top (.modal-header) and centered */
+    padding: 20px 50px;
+    border: 1px solid #888;
+    width: 100%; /* Could be more or less, depending on screen size */
+  }
+
+  .img_korber_modal{
+    width: 50%;
+    float: left;
+  }
+
+  .img_korber_modal_large{
+    width: 50%;
+    float: left;
+  }
+
+  .modal-indicadores {
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+
+  .label_modal{
+    margin: 5px 0 5px 0;
+    width: 100%;
+    text-align: center; 
+    color: black;
+    font-weight: bold;
+    font-size: 2vw;
+  }
+
+  /* The Close Button */
+  .close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transition: transform 0.5s;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+    transform: scale(2, 2) rotate(360deg);
+    /* transform: scale(2, 2); */
+  }
+
+
+  .titulo_modal{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5vw;
+    margin-top: 10px;
+  }
+
+  .modal .imagem_lista{
+    font-size: 24px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+  .modal-header{
+    height: 90px;
+    width: 100%;
+    background-color: #0060ff;
+    color: white;
+    padding: 10px;
+    margin: 0px auto 0%; /* from the top and centered */
+  }
+  .modal-content {
+    background-color: #fefefe;
+    margin: 0% auto; /* 0% from the top (.modal-header) and centered */
+    padding: 20px 50px;
+    border: 1px solid #888;
+    width: 100%; /* Could be more or less, depending on screen size */
+  }
+
+  .label_modal{
+    margin: 5px 0 5px 0;
+    width: 100%;
+    text-align: center; 
+    color: black;
+    font-weight: bold;
+    font-size: 2vw;
+  }
+
+  /* The Close Button */
+  .close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transition: transform 0.5s;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+    transform: scale(2, 2) rotate(360deg);
+    /* transform: scale(2, 2); */
+  }
+
+
+  .titulo_modal{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5vw;
+    margin-top: 10px;
+  }
+
+  .img_korber_modal{
+    width: 50%;
+    float: left;
+  }
+
+  .img_korber_modal_large{
+    width: 80%;
+    float: left;
+  }
+
+  .img_korber_modal_extra_large{
+    width: 70%;
+    float: left;
+  }
+
+  .modal-large {
+    width: 100%; /* Could be more or less, depending on screen size */
+  }
+
+  .modal-extra-large {
+    width: 100%; /* Could be more or less, depending on screen size */
+  }
+
+  .modal-large {
+    width: 100%; /* Could be more or less, depending on screen size */
+  }
+
+  .modal-extra-large {
+    width: 100%; /* Could be more or less, depending on screen size */
+  }
+
+  .modal .imagem_lista{
+    font-size: 24px;
+  }
+
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .modal-header{
+    height: 90px;
+    width: 100%;
+    background-color: #0060ff;
+    color: white;
+    padding: 10px;
+    margin: 50px auto 0%; /* from the top and centered */
+  }
+  .modal-content {
+    background-color: #fefefe;
+    margin: 0% auto; /* 0% from the top (.modal-header) and centered */
+    padding: 20px 50px;
+    border: 1px solid #888;
+    width: 100%; /* Could be more or less, depending on screen size */
+  }
+
+  .modal-indicadores {
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+
+  .label_modal{
+    margin: 5px 0 5px 0;
+    width: 100%;
+    text-align: center; 
+    color: black;
+    font-weight: bold;
+    font-size: 2vw;
+  }
+
+  /* The Close Button */
+  .close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transition: transform 0.5s;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+    transform: scale(2, 2) rotate(360deg);
+    /* transform: scale(2, 2); */
+  }
+
+
+  .titulo_modal{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5vw;
+    margin-top: 10px;
+  }
+  .img_korber_modal{
+    width: 50%;
+    float: left;
+  }
+
+  .img_korber_modal_large{
+    width: 70%;
+    float: left;
+  }
+
+  .img_korber_modal_extra_large{
+    width: 55%;
+    float: left;
+  }
+
+  .modal-large {
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  .modal-extra-large {
+    width: 100%; /* Could be more or less, depending on screen size */
+  }
+
+  .modal .imagem_lista{
+    font-size: 24px;
+  }
+  
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1279px) {
+
+  .modal-header{
+    height: 90px;
+    width: 70%;
+    background-color: #0060ff;
+    color: white;
+    padding: 10px;
+    margin: 100px auto 0%; /* 10% from the top and centered */
+  }
+  .modal-content {
+    background-color: #fefefe;
+    margin: 0% auto; /* 0% from the top (.modal-header) and centered */
+    padding: 20px 50px;
+    border: 1px solid #888;
+    width: 70%; /* Could be more or less, depending on screen size */
+  }
+
+  .modal-indicadores {
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+
+  .label_modal{
+    margin: 5px 0 5px 0;
+    width: 100%;
+    text-align: center; 
+    color: black;
+    font-weight: bold;
+    font-size: 1.5vw;
+  }
+
+  /* The Close Button */
+  .close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transition: transform 0.5s;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+    transform: scale(2, 2) rotate(360deg);
+    /* transform: scale(2, 2); */
+  }
+
+
+  .titulo_modal{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2vw;
+    margin-top: 10px;
+  }
+
+  .img_korber_modal{
+    width: 50%;
+    float: left;
+  }
+
+  .img_korber_modal_large{
+    width: 50%;
+    float: left;
+  }
+
+  .img_korber_modal_extra_large{
+    width: 45%;
+    float: left;
+  }
+
+  .modal-large {
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  .modal-extra-large {
+    width: 100%; /* Could be more or less, depending on screen size */
+  }
+
+  .modal .imagem_lista{
+    font-size: 24px;
+  }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1281) {
+
+  .modal-header{
+    height: 90px;
+    width: 50%;
+    background-color: #0060ff;
+    color: white;
+    padding: 10px;
+    margin: 100px auto 0%; /* 10% from the top and centered */
+  }
+  .modal-content {
+    background-color: #fefefe;
+    margin: 0% auto; /* 0% from the top (.modal-header) and centered */
+    padding: 20px 50px;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+  }
+
+  .modal-indicadores {
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+
+  .label_modal{
+    margin: 5px 0 5px 0;
+    width: 100%;
+    text-align: center; 
+    color: black;
+    font-weight: bold;
+    font-size: 1.5vw;
+  }
+
+  /* The Close Button */
+  .close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transition: transform 0.5s;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+    transform: scale(2, 2) rotate(360deg);
+    /* transform: scale(2, 2); */
+  }
+
+
+  .titulo_modal{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5vw;
+    margin-top: 10px;
+  }
+
+  .img_korber_modal{
+    width: 70%;
+    float: left;
+  }
+
+  .img_korber_modal_large{
+    width: 50%;
+    float: left;
+  }
+
+  .img_korber_modal_extra_large{
+    width: 35%;
+    float: left;
+  }
+
+  .modal-large {
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  .modal-extra-large {
+    width: 100%; /* Could be more or less, depending on screen size */
+  }
+
+  .modal .imagem_lista{
+    font-size: 24px;
+  }
+
+}
+   
+  
+@media only screen and (min-width: 1370px) {
+
+  .modal-header{
+    height: 90px;
+    width: 50%;
+    background-color: #0060ff;
+    color: white;
+    padding: 10px;
+    margin: 100px auto 0%; /* 10% from the top and centered */
+  }
+  .modal-content {
+    background-color: #fefefe;
+    margin: 0% auto; /* 0% from the top (.modal-header) and centered */
+    padding: 20px 50px;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+  }
+
+  .modal-indicadores {
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+
+  .label_modal{
+    margin: 5px 0 5px 0;
+    width: 100%;
+    text-align: center; 
+    color: black;
+    font-weight: bold;
+    font-size: 1vw;
+  }
+
+  /* The Close Button */
+  .close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transition: transform 0.5s;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+    transform: scale(2, 2) rotate(360deg);
+    /* transform: scale(2, 2); */
+  }
+
+
+  .titulo_modal{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2vw;
+    margin-top: 10px;
+  }
+
+  .img_korber_modal{
+    width: 50%;
+    float: left;
+  }
+
+  .img_korber_modal_large{
+    width: 30%;
+    float: left;
+  }
+
+  .img_korber_modal_extra_large{
+    width: 25%;
+    float: left;
+  }
+
+  .modal-large {
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  .modal-extra-large {
+    width: 100%; /* Could be more or less, depending on screen size */
+  }
+
+  .modal .imagem_lista{
+    font-size: 24px;
+  }
+    
+}
+
+/* Lanscape Tablets */
+@media only screen and (width: 1280px) {
+  .modal-header{
+    height: 90px;
+    width: 70%;
+    background-color: #0060ff;
+    color: white;
+    padding: 10px;
+    margin: 100px auto 0%; /* 10% from the top and centered */
+  }
+  .modal-content {
+    background-color: #fefefe;
+    margin: 0% auto; /* 0% from the top (.modal-header) and centered */
+    padding: 20px 50px;
+    border: 1px solid #888;
+    width: 70%; /* Could be more or less, depending on screen size */
+  }
+
+  .modal-indicadores {
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+
+  .label_modal{
+    margin: 5px 0 5px 0;
+    width: 100%;
+    text-align: center; 
+    color: black;
+    font-weight: bold;
+    font-size: 1.5vw;
+  }
+
+  /* The Close Button */
+  .close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transition: transform 0.5s;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+    transform: scale(2, 2) rotate(360deg);
+    /* transform: scale(2, 2); */
+  }
+
+
+  .titulo_modal{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2vw;
+    margin-top: 10px;
+  }
+
+  .img_korber_modal{
+    width: 50%;
+    float: left;
+  }
+
+  .img_korber_modal_large{
+    width: 50%;
+    float: left;
+  }
+
+  .img_korber_modal_extra_large{
+    width: 45%;
+    float: left;
+  }
+
+  .modal-large {
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  .modal-extra-large {
+    width: 100%; /* Could be more or less, depending on screen size */
+  }
+
+  .modal .imagem_lista{
+    font-size: 38px;
+  }
+}
+
+@media only screen and (orientation: portrait) {
+
+}
+
+/* Portrait Tablets */
+@media only screen and (orientation: portrait) and (width:800px) {
+
+  .modal-header{
+    height: 90px;
+    width: 100%;
+    background-color: #0060ff;
+    color: white;
+    padding: 10px;
+    margin: 0px auto 0%; /* from the top and centered */
+  }
+  .modal-content {
+    background-color: #fefefe;
+    margin: 0% auto; /* 0% from the top (.modal-header) and centered */
+    padding: 20px 50px;
+    border: 1px solid #888;
+    width: 100%; /* Could be more or less, depending on screen size */
+  }
+
+  .img_korber_modal{
+    width: 50%;
+    float: left;
+  }
+
+  .img_korber_modal_large{
+    width: 50%;
+    float: left;
+  }
+
+  .modal-indicadores {
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+
+  .label_modal{
+    margin: 5px 0 5px 0;
+    width: 100%;
+    text-align: center; 
+    color: black;
+    font-weight: bold;
+    font-size: 2vw;
+  }
+
+  /* The Close Button */
+  .close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transition: transform 0.5s;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+    transform: scale(2, 2) rotate(360deg);
+    /* transform: scale(2, 2); */
+  }
+
+
+  .titulo_modal{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5vw;
+    margin-top: 10px;
+  }
+
+  .modal .imagem_lista{
+    font-size: 38px;
+  }
+
+}

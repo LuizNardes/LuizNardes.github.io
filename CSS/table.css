@@ -1,0 +1,505 @@
+tr{
+  width: 100%;
+  display: table;
+}
+
+thead{
+  text-align: center;
+  display: block;
+  background-color: rgb(0,96,255);
+  color: white;
+}
+
+
+tbody tr{
+  width: 100%;
+}
+
+tbody tr:hover{
+  background-color: rgb(105, 162, 255) !important;
+}
+
+tbody td{
+  border: solid 1px #ccc;
+  /* text-align: left; */
+}
+
+/* #tabela_colaboradores tr:nth-child(odd),
+#tabela_positivos_ativos tr:nth-child(odd),
+#tabela_recuperados tr:nth-child(odd),
+#tabela_aguardando_resultado tr:nth-child(odd),
+#tabela_negativos tr:nth-child(odd),
+#tabela_testados tr:nth-child(odd),
+#tabela_confirmados tr:nth-child(odd),
+#tabela_afastados tr:nth-child(odd),
+#tabela_historico tr:nth-child(odd),
+#tabela tr:nth-child(odd){
+  background-color: #eee;
+}
+
+#tabela_colaboradores tr:nth-child(even),
+#tabela_positivos_ativos tr:nth-child(even),
+#tabela_recuperados tr:nth-child(even),
+#tabela_aguardando_resultado tr:nth-child(even),
+#tabela_negativos tr:nth-child(even),
+#tabela_testados tr:nth-child(even),
+#tabela_confirmados tr:nth-child(even),
+#tabela_afastados tr:nth-child(even),
+#tabela_historico tr:nth-child(even),
+#tabela tr:nth-child(even){
+  background-color: #fff;
+} */
+
+tbody tr:nth-child(odd){
+  background-color: #eee;
+} 
+
+tbody tr:nth-child(even){
+  background-color: #fff;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  thead tr{
+    width: calc(100%);
+  }
+
+  
+  table, td{  
+    border: none;
+    text-align: center;
+    font-size: 1vw;
+  }
+
+  th{
+    border: 1px solid black;
+  }
+  
+  th h1{
+    color: white;
+    font-weight: bold;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 5px;
+  }
+
+  tbody{
+    display: block;
+    overflow-y: scroll;
+    height: auto;
+    max-height: 250px; 
+  }
+
+  .td_font{
+    font-size: 0.8vw;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+  thead tr{
+    width: calc(100%);
+  }
+  
+
+  table, td{  
+    border: none;
+    text-align: center;
+    font-size: 1vw;
+  }
+
+  th{
+    border: 1px solid black;
+  }
+  
+  th h1{
+    color: white;
+    font-weight: bold;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 5px;
+  }
+
+  tbody{
+    overflow-y: scroll;
+    height: auto;
+    display: block;
+    max-height: 250px; 
+  }
+
+  .td_font{
+    font-size: 0.8vw;
+  }
+
+  .td_historico_font{
+    font-size: 1.5vw;
+    text-align:left;
+  }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+  thead tr{
+    width: calc(100% - 18px);
+  }
+  
+  
+  table, td{  
+    border: none;
+    text-align: center;
+    font-size: 10pt;
+  }
+
+  th{
+    border: 1px solid black;
+  }
+  
+  th h1{
+    color: white;
+    font-weight: bold;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 5px;
+  }
+
+  tbody{
+    overflow-y: scroll;
+    height: auto;
+    display: block;
+    max-height: 250px; 
+  }
+
+  .td_font{
+    font-size: 0.8vw;
+  }
+
+  .td_historico_font{
+    font-size: 1.5vw;
+    text-align:left;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1279px) {
+
+  thead tr{
+    width: calc(100% - 18px);
+  }
+  
+
+  table, td{  
+    border: none;
+    text-align: center;
+    font-size: 10pt;
+  }
+
+
+  th{
+    border: 1px solid black;
+  }
+  
+  th h1{
+    color: white;
+    font-weight: bold;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 5px;
+  }
+
+  tbody{
+    overflow-y: scroll;
+    height: auto;
+    display: block;
+    max-height: 250px; 
+  }
+
+  .td_font{
+    font-size: 0.8vw;
+  }
+
+  .td_historico_font{
+    font-size: 1.2vw;
+    text-align:left;
+  }
+  
+}
+
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1281px) {
+
+  thead tr{
+    width: calc(100% - 18px);
+  }
+  
+
+  table, td{  
+    border: none;
+    text-align: center;
+    font-size: 10pt;
+  }
+
+  th{
+    border: 1px solid black;
+  }
+  
+  th h1{
+    color: white;
+    font-weight: bold;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 5px;
+  }
+
+  tbody{
+    overflow-y: scroll;
+    height: auto;
+    display: block;
+    max-height: 250px; 
+  }
+
+  .td_font{
+    font-size: 0.8vw;
+  }
+
+  .td_historico_font{
+    font-size: 1vw;
+    text-align:left;
+  }
+
+}
+
+@media only screen and (min-width: 1370px) {
+
+  thead tr{
+    width: calc(100% - 18px);
+  }
+  
+  
+  table, td{  
+    border: none;
+    text-align: center;
+    font-size:10pt;
+  }
+
+
+  th{
+    border: 1px solid black;
+  }
+  
+  th h1{
+    color: white;
+    font-weight: bold;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 5px;
+  }
+
+  tbody{
+    overflow-y: scroll;
+    height: auto;
+    display: block;
+    max-height: 500px;
+    min-height: 200px; 
+  }
+
+  .td_font{
+    font-size: 0.6vw;
+  }
+
+  .td_historico_font{
+    font-size: 0.8vw;
+    text-align:left;
+  }
+}
+
+/* Lanscape Tablets */
+@media only screen and (width: 1280px) {
+  thead tr{
+    width: calc(100%);
+  }
+
+  table, td{  
+    border: none;
+    text-align: center;
+    font-size: 1.2vw;
+  }
+
+  th{
+    border: 1px solid black;
+  }
+  
+  th h1{
+    color: white;
+    font-weight: bold;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 5px;
+  }
+
+  tbody{
+    overflow-y: scroll;
+    height: auto;
+    display: block;
+    max-height: 500px;
+    min-height: 200px; 
+  }
+
+  .td_font{
+    font-size: 0.6vw;
+  }
+
+  .td_historico_font{
+    font-size: 0.8vw;
+    text-align:left;
+  }
+}
+
+
+@media only screen and (orientation: portrait) {
+
+  thead tr{
+    width: calc(100% - 18px);
+  }
+  
+
+  table, td{  
+    border: none;
+    text-align: center;
+    font-size: 2vw;
+  }
+
+  th{
+    border: 1px solid black;
+  }
+  
+  th h1{
+    color: white;
+    font-weight: bold;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 5px;
+  }
+
+  tbody{
+    overflow-y: scroll;
+    height: auto;
+    display: block;
+    max-height: 500px;
+    min-height: 200px; 
+  }
+
+  .td_font{
+    font-size: 0.6vw;
+  }
+
+  .td_historico_font{
+    font-size: 0.8vw;
+    text-align:left;
+  }
+
+}
+
+/* Portrait Tablets */
+@media only screen and (orientation: portrait) and (width:800px) {
+
+  thead tr{
+    width: calc(100%);
+  }
+  
+
+  table, td{  
+    border: none;
+    text-align: center;
+    font-size: 2vw;
+  }
+
+  th{
+    border: 1px solid black;
+  }
+  
+  th h1{
+    color: white;
+    font-weight: bold;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 5px;
+  }
+
+  tbody{
+    overflow-y: scroll;
+    height: auto;
+    display: block;
+    max-height: 500px;
+    min-height: 200px; 
+  }
+
+  .td_font{
+    font-size: 0.6vw;
+  }
+
+  .td_historico_font{
+    font-size: 0.8vw;
+    text-align:left;
+  }
+
+}

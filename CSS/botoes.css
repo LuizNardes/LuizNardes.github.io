@@ -1,0 +1,221 @@
+ 
+  /* Style the tab */
+  .tab {
+    overflow: hidden;
+    border: 1px solid #0060ff;
+    background-color: #f1f1f1;
+    width: 100%;
+  }
+
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    color: #0060ff;
+  }
+
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #0060ff;
+    color: white;
+  }
+
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+  }
+  
+  .botao_confirma{
+    border: solid 1px;
+    color: green;
+    background-color: white; /* Green */
+  }
+
+  .botao_confirma:hover{
+    cursor: pointer;
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+
+  .botao_verde{
+    border: solid 1px;
+    color: green;
+    background-color: white; /* Green */
+    display: inline-block;
+  }
+
+  .botao_verde:hover{
+    cursor: pointer;
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+
+  .botao_azul{
+    border: solid 1px;
+    color: #0060ff;
+    background-color: white; 
+    display: inline-block;
+  }
+
+  .botao_azul:hover{
+    cursor: pointer;
+    background-color: #0060ff; 
+    color: white;
+  }
+
+  .botao_vermelho{
+    border: solid 1px;
+    color: #ff4d4d;
+    background-color: white; 
+    display: inline-block;
+  }
+
+  .botao_vermelho:hover{
+    cursor: pointer;
+    background-color: #ff4d4d; 
+    color: white;
+  }
+
+  .botao_laranja{
+    border: solid 1px;
+    color: #ff9933;
+    background-color: white; 
+    display: inline-block;
+  }
+
+  .botao_laranja:hover{
+    cursor: pointer;
+    background-color: #ff9933; 
+    color: white;
+  }
+
+  .botao_tabela{
+    padding: 10px;
+    font-size: 10px;
+  }
+
+  .botao_icone{
+    position: relative;
+    padding-left: 40px;
+  }
+
+  .icone_botao{
+    font-size: 20px;
+    float: left;
+  }
+
+  .icone_botao_filtro{
+    position: absolute;
+    left: 10px;
+    top: 3px;
+  }
+
+  .icone_botao_direita{
+    font-size: 20px;
+    float: right;
+  }
+
+  .imagem_lista:hover {
+    cursor: pointer;
+  }
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .icone_botao{
+    font-size: 20px;
+    float: left;
+  }
+
+  .icone_botao_direita{
+    font-size: 20px;
+    float: right;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+  .icone_botao{
+    font-size: 20px;
+    float: left;
+  }
+
+  .icone_botao_direita{
+    font-size: 20px;
+    float: right;
+  }
+
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+ 
+  .icone_botao{
+    font-size: 20px;
+    float: left;
+  }
+
+  .icone_botao_direita{
+    font-size: 20px;
+    float: right;
+  }
+  
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .icone_botao{
+    font-size: 14px;
+    float: left;
+  }
+
+  .icone_botao_direita{
+    font-size: 14px;
+    float: right;
+  }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+  .icone_botao{
+    font-size: 18px;
+    float: left;
+  }
+
+  .icone_botao_direita{
+    font-size: 18px;
+    float: right;
+  }
+
+}
+   
+  
+@media only screen and (min-width: 1370px) {
+  .icone_botao{
+    font-size: 20px;
+    float: left;
+  }  
+}
+
+
+
+
+
+  @media only screen and (orientation: portrait) {
+
+   
+
+  }
